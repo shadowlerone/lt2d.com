@@ -31,17 +31,34 @@ button, .notification {
 }
 
 .is-info, .notification.is-info {
-  background-color: #8530f1;
+  background-color: @notification-color;
   color: #fff;
 }
 
 .is-alert{
-  background-color: #F130AF;
+  background-color: @alert-color;
   color: #fff;
 }
 
 .shadowed {
 	.shadow();
+}
+.navbar .column {
+	a {
+		max-height: 39px;
+		box-sizing:border-box;
+		padding: 0.5em 1em;
+		&.no-pad {
+			padding: 0;
+		}
+		&:hover:not(.no-hover) {
+			background-color: @alert-color;
+			color: #fff;
+		}
+		img {
+			vertical-align: middle;
+		}
+	}
 }
 
 .hero{
@@ -83,7 +100,7 @@ p{
     color: #fff;
   }
   button{
-    background-color: #F130AF !important;
+    background-color: @alert-color !important;
     color: #FFF !important;
     a{ color:#FFF}
     border: none !important;
