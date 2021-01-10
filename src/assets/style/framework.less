@@ -347,13 +347,13 @@ h3,.highlight {
 }
 
 @media screen and (max-width: 768px) {
-  .level-item:not(: last-child) {
+  .level-item:not(:last-child) {
     margin-bottom: 10px;
   }
 }
 
 @media screen and (min-width: 769px) {
-  .pagination > a:not(: first-child) {
+  .pagination > a:not(:first-child) {
     -webkit-box-ordinal-group: 2;
     -ms-flex-order: 1;
     order: 1;
@@ -362,6 +362,9 @@ h3,.highlight {
 
 @media screen and (min-width: 769px)  {
   .mobile-only { display: none; }
+}
+@media screen and (max-width: 769px)  {
+	.not-mobile { display: none; }
 }
 
 .section {
@@ -376,7 +379,8 @@ h3,.highlight {
 }
 
 .shadowed {
-  box-shadow: 0 20px 40px -20px #333;
+//   box-shadow: 0 20px 40px -20px #333;
+	.shadow();
 }
 
 .highlight {
