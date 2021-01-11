@@ -12,7 +12,7 @@
 
 ### On the client side, no installation is necessary. You just point your browser to your LT2D URL.
 
-#### Requires https://github.com/robinmoisson/staticrypt
+#### Requires: https://github.com/robinmoisson/staticrypt
 
 staticrypt ./src/space/template/index.html \
    password \
